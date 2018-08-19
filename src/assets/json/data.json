@@ -1,0 +1,16 @@
+{  
+    "receipeArray":[  
+       {  
+          "receipeName":"Chole",
+          "imageUrl":"../assets/images/chole.jpg",
+          "description":"Chole is a kind of curried vegetable dish made from chickpeas. Chole may be referred to as Punjabi Chole Masala or Chana Masala as it is made from white chana, a large variety of light colored chickpeas, and flavored with spicy masala seasonings. ",
+          "ingredients":""
+       },
+       {  
+          "receipeName":"Halwa",
+          "imageUrl":"../assets/images/halwa.jpg",
+          "description":"Gajar ka halwa is a combination of nuts, milk, sugar, khoya and ghee with grated carrot. It is a light nutritious dessert with less fat (a minimum of 10.03% and an average of 12.19%) than many other typical South Asian desserts.",
+          "ingredients":""
+       }
+    ]
+ }

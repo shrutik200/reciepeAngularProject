@@ -1,0 +1,26 @@
+
+  <div *ngFor="let item of receipeArray ;let i= index ">
+      <div class=" col-sm-10 m-3 py-3 border rounded border-secondary">  
+        <div class="row my-3 ml-3">
+          <h3>{{item.receipeName}}</h3>
+          <button class= "ml-5 btn btn-info" (click)="changeData(item)">Edit</button>
+        </div>  
+      <div class= "row">
+        <div class="col-sm-3">
+          <img src={{item.imageUrl}} alt="Image not available">
+        </div>
+        <div class="col-sm-offset-1 col-sm-7">
+          <div class="row">
+            <div class="col-sm-10">
+              <p>{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class=" row ml-5 my-3" *ngIf="formFlag">
+    <div class="border rounded border-secondary col-sm-10">
+        <app-recripe-form [selectedItem]="selectedItem" (showEditedForm)= updateFormValue($event)></app-recripe-form><!-- (showForm)="changeFlagStatus($event)" -->
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+
+<div style="text-align:center">
+  <h1>
+    Welcome to Khana Kajana!
+  </h1>
+</div>
+<button (click)="receipeForm()">Add Receipe</button>
+
+<div class=" row ml-5 my-3" *ngIf="showFormFlag">
+  <div class="border rounded border-secondary col-sm-10">
+      <app-recripe-form [id_number]= "id_number" (showForm)="changeFlagStatus($event)"></app-recripe-form>
+  </div>
+</div>
+<div>
+  <app-receipe-list [receipeArray]="receipeArray"></app-receipe-list>
+</div>
